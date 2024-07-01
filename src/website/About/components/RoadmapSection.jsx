@@ -142,11 +142,16 @@ export default function RoadmapSection() {
             >
                <Box position="relative">
                 {index === roadmapItems.length - 1 ? (
-                  <img
-                    src={Sindicator}
-                    alt="Sindicator"
-                    className="Sindicator"
-                  />
+                 <img style={{position: 'absolute', right: "270px"}}
+                 component="img"
+                 src={item.event === "Ship 2nd game" ? lightning : indicator}
+                 alt="indicator"
+                 width="48px"
+                 sx={{ marginBottom: "20px" }}
+                 className={
+                   item.event === "Ship 2nd game" ? "lightningImg" : ""
+                 }
+               />
                 ) : (
                   <img style={{position: 'absolute', right: "270px"}}
                     component="img"
@@ -161,11 +166,7 @@ export default function RoadmapSection() {
                 )}
 
                 {index === roadmapItems.length - 1 ? (
-                  <img
-                    src={lastBorder}
-                    alt="lastBorder"
-                    className="lastBorder"
-                  />
+                   <span className="indicator_borders"></span>
                 ) : (
                   <span className="indicator_border"></span>
                 )}

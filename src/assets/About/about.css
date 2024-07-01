@@ -26,12 +26,22 @@
   right: 23px;
 }
 
+.indicator_borders {
+  height: 36px;
+  padding: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 48px;
+  right: 23px;
+}
+
+
 
 .lastBorder{
     position: absolute;
     top: 47px;
     right: 22px;
-    height: 40px;
+    right: 23px;
 }
 
 .lightningImg {
@@ -53,7 +63,13 @@
     .indicator_border{
       /* position: fixed; */
       top: 47px;
-      right: 300px;
+      right: 293px;
       height: 70px;
   }
+  .indicator_borders{
+    /* position: fixed; */
+    top: 40px;
+    right: 293px;
+    height: 70px;
+}
   }

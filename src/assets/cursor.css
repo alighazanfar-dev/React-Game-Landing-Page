@@ -1,0 +1,35 @@
+.blob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-image: linear-gradient(#60aafe 5%, #218aff);
+  /* background-image: url("../assets/images/ellipses.png"); */
+  filter: blur(150px);
+  transition: all 450ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-20% + 10px), -20%);
+  z-index: 1100;
+}
+
+/* Random CSS for Demo */
+.container43 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.content-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}

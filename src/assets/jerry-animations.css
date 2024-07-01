@@ -1,0 +1,51 @@
+.gamePreviewSectionLogoContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+  transition-delay: 1s;
+}
+
+/* Updated the width 21 - 06 - 2024 */
+
+.gamePreviewSection1Logo {
+  width: 256px;
+  height: 256px;
+  border-radius: 235px;
+  object-fit: cover;
+  transition: all 1s ease;
+  border: 1.5px solid #fff;
+}
+
+.gamePreviewSection2 {
+  position: relative;
+}
+.gamePreviewSection2VerticalLinesCont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.6;
+  transform: translate(-50%, -50%);
+  transition: all 1s ease;
+  z-index: -10;
+}
+
+/* Updated code 21-06-2024 */
+.gamePreviewSection2LogoContainer {
+  width: 64px;
+  height: 64px;
+}
+
+.zoom-out {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+/* Medium screens (tablets, 768px and up) */
+@media only screen and (max-width: 1024px) {
+}
+
+/* Small screens (phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+}

@@ -1,0 +1,59 @@
+.text-center {
+  text-align: center !important;
+}
+#sectionAbout1,
+#sectionAbout2,
+#sectionAbout3 {
+  background-image: url("../images/logobg.png");
+  object-fit: cover;
+  display: flex;
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.team_section {
+  padding: 70px 100px;
+}
+.indicator_border {
+  height: 36px;
+  padding: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 48px;
+  right: 23px;
+}
+
+
+.lastBorder{
+    position: absolute;
+    top: 47px;
+    right: 22px;
+    height: 40px;
+}
+
+.lightningImg {
+  background-color: #ff4f17;
+  padding: 5px;
+  border-radius: 50px;
+  filter: drop-shadow(0 0 10px #FF4F17) drop-shadow(0 0 20px #FF4F17);
+  border-radius: 50%;
+}
+
+#sectionAbout4 {
+    background-image: url("../images//logobg.png");
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media screen and (max-width : 600px) {
+    .indicator_border{
+      /* position: fixed; */
+      top: 47px;
+      right: 300px;
+      height: 70px;
+  }
+  }

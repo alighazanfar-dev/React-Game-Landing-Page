@@ -1,0 +1,333 @@
+@import url("./jerry-animations.css");
+
+.w-50 {
+  width: 50% !important;
+}
+
+/* Updated code */
+.play_now {
+  background-color: #218aff !important;
+  padding: 0px 16px !important;
+  height: 64px;
+  max-width: 365px;
+  width: 100%;
+  font-size: 24px !important; 
+}
+.play_now:hover,
+.discord_btn:hover {
+  background-color: #0865ce !important;
+}
+/* join us */
+.join_us {
+  font-size: 48px;
+}
+.discord_btn {
+  background-color: #218aff !important;
+  height: 45px;
+  font-size: 16;
+}
+.hr_divider {
+  margin-top: 50px;
+}
+.subscribe_btn {
+  background-color: #218aff !important;
+  font-size: 16;
+  width: 28%;
+}
+input[type="text"]:focus {
+  border: 1px solid red !important;
+}
+/* // */
+.container1 {
+  display: flex;
+  position: relative;
+  top: -80px;
+  gap: 30px;
+  left: 0;
+  /* overflow: hidden; */
+}
+.container2 {
+  display: flex;
+  position: relative;
+  top: 0px;
+  gap: 30px;
+  left: 0;
+  /* overflow: hidden; */
+}
+
+.image-wrapper {
+  position: relative;
+  animation: moveUp 15s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(50vh);
+  }
+  100% {
+    transform: translateY(-50vh);
+  }
+}
+
+/* Adjust positions as needed */
+.image-wrapper:nth-child(1) {
+  top: 30px;
+}
+
+.image-wrapper:nth-child(2) {
+  top: 50px;
+}
+
+.image-wrapper:nth-child(3) {
+  top: 70px;
+}
+
+.image-wrapper:nth-child(4) {
+  top: 40px;
+}
+.image-wrapper:nth-child(5) {
+  top: 60px;
+}
+
+#section3 {
+  /* background-image: url("images//jerrybg.jpeg"); */
+  /* background-color: #000; */
+  object-fit: contain;
+  position: relative;
+  z-index: 12;
+}
+#section4 {
+  /* background-image: url("images//jerrybg.jpeg"); */
+  background-color: #000;
+  object-fit: contain;
+  position: relative;
+  z-index: 11;
+}
+#section5 {
+  /* background-image: url("images//jerrybg.jpeg"); */
+  background-color: #000;
+  object-fit: contain;
+  position: relative;
+  z-index: 15;
+  overflow: hidden;
+}
+#section6 {
+  /* background-image: url("images//jerrybg.jpeg"); */
+  background-color: #000;
+  object-fit: contain;
+  position: relative;
+  z-index: 9;
+}
+#section7 {
+  /* background-image: url("images//jerrybg.jpeg"); */
+  background-color: #000;
+  object-fit: contain;
+  position: relative;
+  z-index: 15;
+  overflow: hidden;
+}
+.jerry_main {
+  width: 100%;
+  min-width: 1000px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden !important;
+}
+.jerry-image {
+  transition: transform 0.5s ease-in-out;
+}
+
+.jerry-image.move-right {
+  transform: translateX(50px);
+}
+
+/* image animation */
+.battel_img {
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease; /* Ensure smooth transition */
+}
+
+.cover {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+/* Shrink image on mouse down */
+.battel_img:active {
+  transform: scale(0.95);
+}
+
+/* Hover effect to make cover appear with fade-in animation */
+.battel_img:hover .cover {
+  animation: fadeIn 1s forwards;
+}
+
+/* Animation for box tags battel ground */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Define animation classes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-ins {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+.fade-in {
+  opacity: 1 !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.animate {
+  opacity: 0; /* Ensure this is set */
+  animation: fadeIn 1s forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.5s;
+}
+
+.delay-2 {
+  animation-delay: 1s;
+}
+
+.delay-3 {
+  animation-delay: 1.5s;
+}
+.hovered{
+  border: 4px solid #218AFF  !important;
+}
+
+.delay-4 {
+  animation-delay: 1s;
+}
+/* bubble animation */
+.box {
+  /* animation: up-down 3s linear infinite; */
+  transform-origin: 50% 50%;
+}
+
+@keyframes up-down {
+  0%,
+  100% {
+    transform: translate(1px, 22px);
+  }
+  24% {
+    transform: translate(1px, 30px);
+  }
+  50% {
+    transform: translate(1px, 12px);
+  }
+  74% {
+    transform: translate(1px, 22px);
+  }
+}
+@keyframes animatefullRight {
+  from {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(200%);
+    opacity: 1;
+  }
+}
+.w3-animate-full-right {
+  animation: animatefullRight 1s ease-out;
+}
+@keyframes animateRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animateLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  opacity: 1 !important;
+  /* animation: fadeUp 1s ease-out; */
+}
+
+.w3-animate-left {
+  animation: animateLeft 1s ease-out;
+}
+.w3-animate-right {
+  animation: animateRight 1s ease-out;
+}

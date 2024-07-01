@@ -10,7 +10,7 @@ const particlesSvg = (
       <rect
         y="28.75"
         width="8.625"
-        height="86.25"
+        height="90.25"
         rx="4.3125"
         fill="url(#paint0_linear_265_1275)"
       />

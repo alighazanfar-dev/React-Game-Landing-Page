@@ -144,7 +144,7 @@ export default function RoadmapSection() {
                 {index === roadmapItems.length - 1 ? (
                  <img style={{position: 'absolute', right: "270px"}}
                  component="img"
-                 src={item.event === "Ship 2nd game" ? lightning : indicator}
+                 src={Sindicator}
                  alt="indicator"
                  width="48px"
                  sx={{ marginBottom: "20px" }}

@@ -91,12 +91,18 @@ export default function JoinUs() {
           }}
         />
 
-        <Typography sx={{ color: "#fff", fontFamily: "Poppins, sans-serif", textAlign: "Center" }}>
+        <Typography
+          sx={{
+            color: "#fff",
+            fontFamily: "Poppins, sans-serif",
+            textAlign: "Center",
+          }}
+        >
           Subscribe to track our latest and coolest release!
         </Typography>
 
         <Box sx={{ width: "100%" }}>
-          <Form style={{display: "flex", flexDirection: "row"}}>
+          <Form>
             <InputBox>
               <FormControl fullWidth error={emailError}>
                 <Box sx={{ position: "relative" }}>
@@ -119,14 +125,22 @@ export default function JoinUs() {
                 )}
               </FormControl>
             </InputBox>
-
-            <SubscribeButton
+            <Box display={{ xs: "none", md: "block" }}>
+            <SubscribeButton 
               variant="contained"
               onClick={handleSubscribeClick}
               fullWidth={isExtraSmallScreen}
             >
               Subscribe
             </SubscribeButton>
+            </Box>
+
+           
+            <Box display={{ xs: "block", md: "none", width: "100%", paddingTop: "10px" }}>
+            <CallToActionButton fullWidth variant="contained">
+              Subscribe
+            </CallToActionButton>
+            </Box>
           </Form>
         </Box>
       </Main>
@@ -135,7 +149,6 @@ export default function JoinUs() {
     </Box>
   );
 }
-
 
 const Main = styled(Container)(({ theme }) => ({
   display: "flex",
@@ -197,7 +210,6 @@ const InputBox = styled(Box)(({ theme }) => ({
     width: "100%",
   },
 }));
-
 
 const StyledInput = styled("input")(({ theme, error }) => ({
   color: "#fff",

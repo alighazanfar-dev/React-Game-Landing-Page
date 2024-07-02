@@ -29,15 +29,7 @@ const Styledtext = styled(Box)({
 const StyledCard = styled(Box)({
   cursor: "pointer",
   position: "relative",
-  "&:hover": {
-    "& .hoverText": {
-      color: "#218AFF",
-    },
-    "& img": {
-      transform: "scale(1.06)",
-      transition: "transform 0.3s ease",
-    },
-  },
+
   "@media (max-width: 600px)": {
     // marginTop: "64px",
   },
@@ -71,6 +63,16 @@ const StyledTitleTop = styled(Typography)({
   fontWeight: "800",
   marginBottom: "15px",
   color: "#fff",
+  "&.hoverText":{color: "#218AFF",},
+  "&:hover": {
+    "& .hoverText": {
+      color: "#218AFF",
+    },
+    "& img": {
+      transform: "scale(1.06)",
+      transition: "transform 0.3s ease",
+    },
+  },
   "@media (max-width: 600px)": {
     fontSize: "24px",
   },
@@ -222,7 +224,7 @@ const   NewsPage = () => {
                 <StyledImages component="img" src={item.img} alt="girl" />
               </ImageContainer>
 
-              <StyledTitleTop variant="h5" className="hoverText" 
+              <StyledTitleTop variant="h5"   className={`target-div ${hoverStates[index] ? 'hoverText' : ''}`}
                 onMouseEnter={() => handleMouseEnter(index)} 
                 onMouseLeave={() => handleMouseLeave(index)}>
                 {item.title}

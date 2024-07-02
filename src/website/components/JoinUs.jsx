@@ -91,12 +91,12 @@ export default function JoinUs() {
           }}
         />
 
-        <Typography sx={{ color: "#fff", fontFamily: "Poppins, sans-serif" }}>
+        <Typography sx={{ color: "#fff", fontFamily: "Poppins, sans-serif", textAlign: "Center" }}>
           Subscribe to track our latest and coolest release!
         </Typography>
 
         <Box sx={{ width: "100%" }}>
-          <Form>
+          <Form style={{display: "flex", flexDirection: "row"}}>
             <InputBox>
               <FormControl fullWidth error={emailError}>
                 <Box sx={{ position: "relative" }}>

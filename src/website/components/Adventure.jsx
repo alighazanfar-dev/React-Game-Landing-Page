@@ -21,7 +21,9 @@ export default function Adventure({ nextScreen, onVideoLoaded }) {
   };
   const onLeaveViewPort = (dir) => {
     const title = titleRef.current;
-    if (title) title.style.opacity = 0;
+    if (title) {
+      title.classList.add('fade-out'); // Apply fade-out class
+    }
   };
 
   const sectionRef = useInViewPort(onEnterViewPort, onLeaveViewPort);
@@ -143,8 +145,11 @@ const AdventureTitle = styled(Typography)(({ theme }) => ({
   fontWeight: "800",
   left: "50%",
   transform: "translateX(-50%)",
-  transition: "opacity 0.5s ease",
-  opacity: 1,
+  transition: "opacity 0.5s ease", // Existing opacity transition
+  opacity: 1, // Initial opacity
+  '&.fade-out': {
+    opacity: 0, // Opacity when fading out
+  },
 }));
 
 const ArrowIcon = styled("img")({

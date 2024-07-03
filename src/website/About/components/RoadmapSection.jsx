@@ -166,7 +166,11 @@ export default function RoadmapSection() {
                 )}
 
                 {index === roadmapItems.length - 1 ? (
-                   <span className="indicator_borders"></span>
+                     <img
+                     src={lastBorder}
+                     alt="lastBorders"
+                     className="lastBorders"
+                   />
                 ) : (
                   <span className="indicator_border"></span>
                 )}

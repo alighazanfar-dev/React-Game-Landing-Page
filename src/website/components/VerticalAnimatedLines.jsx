@@ -21,5 +21,5 @@ const Main = styled(Box)(() => ({
 const ParticlesContainer = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
-  top: "-50%",
+  top: "0%",
 }));

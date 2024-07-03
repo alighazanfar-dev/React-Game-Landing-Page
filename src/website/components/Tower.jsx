@@ -65,12 +65,12 @@ export default function Tower() {
       logoImage.style.height = "";
       logoImage.style.borderRadius = "";
 
-      linesContainer.style.left = `50%`;
-      linesContainer.style.transform = "";
+      // linesContainer.style.left = `50%`;
+      // linesContainer.style.transform = "";
 
-      setTimeout(() => {
-        setAnimationClass(DEFAULT_ANIMATION_CLASSES);
-      }, 1000);
+      // setTimeout(() => {
+      //   setAnimationClass(DEFAULT_ANIMATION_CLASSES);
+      // }, 1000);
 
       const backgroundVideo = document.getElementById("background-video");
 

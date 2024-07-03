@@ -21,8 +21,8 @@ export default function Jerry({ fadeRightAnimation }) {
 
     logoContainer.style.opacity = 1;
     logoContainer.style.top = "50%";
-    verticalAnimatedLines.style.left = "50%";
-    verticalAnimatedLines.style.opacity = 1;
+    // verticalAnimatedLines.style.left = "50%";
+    // verticalAnimatedLines.style.opacity = 1;
   };
 
   const onLeaveViewPort = (dir) => {
@@ -31,8 +31,8 @@ export default function Jerry({ fadeRightAnimation }) {
 
     if (dir === "bottom") {
       logoContainer.style.top = "130%";
-      verticalAnimatedLines.style.left = "20%";
-      verticalAnimatedLines.style.opacity = 0.6;
+      // verticalAnimatedLines.style.left = "20%";
+      // verticalAnimatedLines.style.opacity = 0.6;
     } else {
       logoContainer.style.opacity = 0;
     }

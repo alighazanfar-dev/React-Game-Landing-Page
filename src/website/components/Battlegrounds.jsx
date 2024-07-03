@@ -73,9 +73,7 @@ export default function Battlegrounds() {
     const relativeLeft =
       destinationRect.left - parentRect.left + destinationRect.width / 2;
 
-    setTimeout(() => {
-      linesContainer.style.left = `${relativeLeft}px`;
-    }, 500);
+    
   };
 
   const onEnterViewPort = (dir) => {
